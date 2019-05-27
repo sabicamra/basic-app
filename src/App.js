@@ -5,6 +5,7 @@ import Form from "./Form";
 class App extends Component {
   state = {
     characters: [
+      // if you dont want initial state to be empty comment lines below
       {
         name: "Charlie",
         job: "Junior Developer"
@@ -40,7 +41,7 @@ class App extends Component {
   render() {
     const { characters } = this.state;
     return (
-      <div className="App">
+      <div className="container">
         <Form  handleSubmit={this.handleSubmit} />
         <Table
           characterData={characters}
